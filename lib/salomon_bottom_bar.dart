@@ -160,6 +160,8 @@ class SalomonBottomBar extends StatelessWidget {
 
 /// A tab to display in a [SalomonBottomBar]
 class SalomonBottomBarItem {
+  final dynamic value;
+
   /// An icon to display.
   final Widget icon;
 
@@ -176,6 +178,7 @@ class SalomonBottomBarItem {
   final Color? unselectedColor;
 
   SalomonBottomBarItem({
+    required this.value,
     required this.icon,
     required this.title,
     this.selectedColor,
